@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascata 4</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        p {color:green !important;
+            text-align: right;
+            margin-right: 10em;
+            /* O !importante vai atrás do estilo que é considerado importante, e antes do ponto e vírgula */
+        }
+    </style>
+    <link rel="stylesheet" href="estilo_cascata.css">
+</head>
+<body>
+    <h1>Título Principal</h1>
+
+    <p>Neste exemplo, o estilo incorporado vem primeiro, seguido do estilo externo</p>
+
+    <p>CSS-incorporado > paragráfro verde .|. CSS-externo > parágrafo vermelho</p>
+
+    <p>Mas o estilo incorporado ganhou uma indicação <strong>!important.</strong></p>
+
+    <p style="color: pink;">E agora um estilo inline mandando o parágrafo ficar rosa... que
+    mesmo tendo a especificidade mais alta, perde para a indicação <strong>!important</strong></p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam dolorum praesentium voluptate voluptatibus quam consequatur ipsa qui odio asperiores voluptatem, eum fugit doloremque, eligendi quia, ipsum beatae numquam illum neque!</p>
+
+    <p>Aliquam aspernatur accusantium dicta, ratione vitae similique distinctio eum illum unde placeat quo vero veniam, ducimus quae eius tempora, tenetur maiores nisi earum autem et quia tempore! Officiis, quasi ipsa!</p>
+</body>
+</html>

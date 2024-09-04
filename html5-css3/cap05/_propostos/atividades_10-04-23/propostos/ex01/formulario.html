@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - Formulário</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;
+            width: 70%;
+            margin: auto;
+        }
+
+        h1 {color:purple;
+            border-bottom: solid purple thin;
+            text-align: right;
+        }
+
+        div {margin: 0.5em 0.5em;}
+
+        section img {float:left;}
+
+        form {margin-left: 6em;}
+
+        fieldset {border: solid pink;}
+
+        input, textarea {background-color: pink;
+            border-style: none;
+            width:80%;
+        }
+
+        label {display: inline-block;
+            width:5em;
+        }
+
+        input[type="submit"] {width:15%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dados da conta</h1>
+
+    <section>
+        <img src="form1_back.jpg" alt="Título do formulário">
+    </section>
+
+    <form action="">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email">
+            </div>
+            
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Dados da Conta:</legend>
+
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha">
+            </div>
+
+            <div>
+                <label for="frase">Frase opcional:</label>
+                <textarea name="frase"></textarea>
+            </div>
+        </fieldset>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>

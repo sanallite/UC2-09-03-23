@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World</title>
+        <style>
+            /* Comentário CSS */
+        </style>
+        <script>
+            /* Comentário JS */
+        </script>
+    </head>
+
+    <body>
+        Hello World!
+        <h1>Olá Mundo!</h1>
+        <a href="https://www.pr.senac.br" target="_blank">Senac Paraná</a>
+        <!-- Este é um comentário shift + alt + A -->
+        <p>Primeiro paragráfro</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Blanditiis, cupiditate amet? <br>Incidunt molestias
+            qui molestiae unde veniam tempore et doloremque quisquam, libero sunt consectetur?<br> Adipisci cumque earum
+            deleniti eius atque.</p>
+
+        <h2>Adipisci</h2>
+        <h3>earum</h3>
+
+        <img src="../multimidia/meuamigocao.jpg" alt="Logo Site" width="150" height="100">
+
+        <br>
+        <figure>
+            <img src="../multimidia/anuncio1.jpg" alt="">
+            <img src="../multimidia/anuncio2.jpg" alt="">
+            <img src="../multimidia/anuncio3.jpg" alt="">
+            <figcaption>Legenda das imagens</figcaption>
+        </figure>
+
+        <table border="1">
+            <tr>
+                <th>Livro</th>
+                <th>Quantidade</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>890</td>
+            </tr>
+        </table>
+
+        <table border="2">
+            <thead>
+                <caption>Editora Senac Paraná</caption>
+                <tr>
+                    <th>Livros</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Excel 2013</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>HTML5/CSS3</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td>PowerPoint 2013</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>AutoCAD 2015</td>
+                    <td>120</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table border="1">
+            <caption>Colspan</caption>
+            <thead>
+                <th colspan="2">Célula expandida em várias colunas</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Exemplo de colspan</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Fevereiro</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table border="1">
+            <caption>Rowspan</caption>
+            <thead>
+                <th>Mês</th>
+                <th>Valores</th>
+                <th>Exemplo de rowspan</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>30</td>
+                    <td rowspan="2">Célula expandida em várias linhas</td>
+                </tr>
+                <tr>
+                    <td>Fevereiro</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Lista não ordenada</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <h2>Lista ordenada</h2>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <h2>Lista não ordenada encadeada (ul)</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <ul>
+                <li>Item 2.1</li>
+                <li>Item 2.2</li>
+                <ul>
+                    <li>Item 2.2.1</li>
+                    <li>Item 2.2.2</li>
+                </ul>
+            </ul>
+            <li>Item 3</li>
+        </ul>
+
+        <h2>Lista ordenada encadeada (ol)</h2>
+        <ol type="A" start="6">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <ol>
+                <li>Item 2.1</li>
+                <li>Item 2.2</li>
+            </ol>
+            <li>Item 3</li>
+        </ol>
+
+        <h2>Lista de definição (dl)</h2>
+        <dl>
+            <dt>Termo A</dt>
+            <dd><strong>Descrição A:</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum neque
+                temporibus quos accusamus perspiciatis cum veniam velit nam sapiente! Alias maxime tenetur tempora iste
+                fugit aut molestiae fuga eum blanditiis.</dd>
+
+            <dt>Termo B</dt>
+            <dd><strong>Descrição B:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci
+                cupiditate labore. Nulla et, fugit exercitationem laboriosam, voluptatem ullam quas ab beatae consequuntur
+                reiciendis facere, reprehenderit iure corrupti accusantium sed.</dd>
+
+            <dt>Termo C</dt>
+            <dd><strong>Descrição C:</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti tenetur
+                facere quaerat similique possimus in et ad? Non aliquam nesciunt ipsum, accusantium modi maiores ut? Labore
+                quia fugit sit sequi?</dd>
+        </dl>
+
+        <h2>Inserindo âncoras</h2>
+        <a href="mailto:email@email.com">Enviar e-mail</a>
+        <br>
+        <a href="teste.rar" download="teste.rar">Clique aqui para baixar o arquivo</a>
+
+        <h2>Tabela com cabeçalhos na vertical</h2>
+        <table>
+            <tr>
+                <th>Livro</th>
+                <td>Excel 2013</td>
+                <td>Html5</td>
+            </tr>
+
+            <tr>
+                <th>Quantidade</th>
+                <td>200</td>
+                <td>180</td>
+            </tr>
+        </table>
+
+        <h2>Forumlário com botôes de rádio</h2>
+        <form action="">
+            <label for="opcao">Selecione a opção desejada: </label> <br>
+            <p>
+                <input type="radio" name="opcoes" value="opcao_1">
+                    <label for="opcoes">Opção 1</label> <br>
+                <input type="radio" name="opcoes" value="opcao_2">
+                    <label for="opcoes">Opção 2</label> <br>
+                <input type="radio" name="opcoes" value="opcao_3">
+                    <label for="opcoes">Opção 3</label> <br>
+            </p>
+
+            <h2>Botão com lista suspensa no formulário</h2>
+            <p>
+                <label for="opcoes">Selecione uma das opções:</label>
+            </p>
+            <p>
+                <select name="opcoes">
+                    <option value="">Selecione</option>
+                    <option value="opcao_1">Opção 1</option>
+                    <option value="opcao_2">Opção 2</option>
+                    <option value="opcao_3">Opção 3</option>
+                </select>
+            </p>
+
+            <h2>Caixas de checagem no formulário</h2>
+            <p>
+                <label for="opcoes"> Selecione as opções desejadas:</label>
+
+                <input type="checkbox" name="" value="opcao_1" for="op1">
+                    <label for="op1">Opção 1</label>
+                <input type="checkbox" name="" value="opcao_2" for="op2">
+                    <label for="op2">Opção 2</label>
+                <input type="checkbox" name="" value="opcao_3" for="op3">
+                    <label for="op3">Opção 3</label>
+            </p>
+
+            <h2>Seleção de datas e horários no formulário</h2>
+            <p>
+                <input type="date" name="da" id="">
+                    <label for="date">Data</label>
+                <br>
+                <input type="time" name="ti" id="">
+                    <label for="time">Horário</label>
+                <br>
+                <input type="datetime-local" name="dtl" id="">
+                    <label for="dtl">Data e horário local</label>
+            </p>
+        </form>
+    </body>
+</html>

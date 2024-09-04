@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            width: 50%;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header h1 {
+            color: purple;
+            border-bottom: purple solid thin;
+            text-align: right;
+        }
+
+        main img {
+            float: left;
+        }
+
+        main form fieldset {
+            border: pink 0.2em solid;
+        }
+
+        main form input,
+        textarea {
+            display: block;
+            width: 85%;
+            background-color: pink;
+            border-style: none;
+        }
+
+        main form label {
+            display: block;
+            width: 10%;
+            float: left;
+        }
+
+        main form input[type="submit"] {
+            width: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário genérico</h1>
+    </header>
+
+    <main>
+        <img src="form1_back.jpg" alt="">
+
+        <form action="">
+            <fieldset>
+                <legend>Dados Pessoais:</legend>
+
+                <p>
+                    <label for="">Nome:</label>
+                    <input type="text">
+                </p>
+
+                <p>
+                    <label for="">E-mail:</label>
+                    <input type="email" name="" id="">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados da conta:</legend>
+
+                <p>
+                    <label for="">Senha:</label>
+                    <input type="password">
+                </p>
+
+                <p>
+                    <label for="">Frase opicional:</label>
+                    <textarea></textarea>
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </main>
+</body> 
+</html>

@@ -1,0 +1,87 @@
+body {  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 25vh 114vh 25vh;
+    grid-template-areas: "h h h"
+        "a m s"
+        "f f f";
+}
+
+header {grid-area: h;
+    text-align: center;
+}
+
+main {grid-area: m;
+    padding: 0.1em 1em;
+}
+
+aside {grid-area: a;
+    padding: 0.1em 1em 0.1em 0.1em;
+}
+
+section {grid-area: s;
+    padding: 0.1em 0.1em 0.1em 1em;
+}
+
+footer {grid-area: f;
+    position: fixed;
+    bottom: 0;
+    width: 75%;
+}
+
+header h1 {background-color: #000;
+    color: #fff;
+    padding: 0.1em;
+    border-bottom: solid 0.5em #c4d6a8;
+    margin-top: 0;
+}
+
+header figure {margin: 0 auto;
+}
+
+main article h1 {font-size: 2.5em;
+    border-bottom: #000 solid 0.1em;
+    margin-bottom: 0.1em;
+    margin-top: 0.45em;
+}
+
+main article h5 {margin-top: 0;
+    text-align: right;
+}
+
+main article blockquote {font-style: italic;
+    width: 40%;
+}
+
+main article img {float:left;
+    margin-right: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+aside nav h3 {margin: 0.6em auto;
+}
+
+section article h2 {margin-bottom: 0;
+}
+
+section article h3 {color: #94c645 ;
+    border-top: #94c645 solid thin;
+    margin-top: 0;
+    text-align: right;
+}
+
+section article a {display: block;
+    color: #900;
+    text-align: right;
+}
+
+footer h3 {background-color: #000;
+    border-top: #c4d6a8 solid 0.5em;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 0;
+}

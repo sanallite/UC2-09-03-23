@@ -1,0 +1,48 @@
+body {
+    background-color: #ffffcb;
+    background-image: url(torta_limao_backS.png), url(torta_limao_backI.png);
+    background-position: top, bottom;
+    background-repeat: repeat-x;
+    margin: 0 15em 3em;
+    /* Algumas margens foram de elementos específicos para o corpo */
+}
+
+h1 {
+    color: #ff9900;
+    margin-top: 1.4em;
+}
+
+h2 {
+    background-color: #ff9900;
+    color: white;
+    padding: 0.15em;
+    margin-bottom: 0;
+    /* Margens específicas foram adicionadas */
+}
+
+/* Sem lista de definição */
+ul {
+    background-color: #daff95;
+    border-radius: 0 0 0.93em 0.93em;
+    padding:0.2em;
+    margin-top: 0;
+}
+
+ul li {
+    list-style-type: none;
+    list-style-image: url(torta_limao_item1.gif);
+    list-style-position: inside;
+}
+
+ul ul li {
+    list-style-image: url(torta_limao_item2.gif);
+    list-style-position: inside;
+    margin-left: 3em;
+}
+/* Para definir o estilo de sublistas, coloque os itens na sua ordem de descendência, acima os itens estão dentro de uma lista que está dentro de outra */
+
+ul ul ul li {
+    list-style-image: url(torta_limao_item3.gif);
+    list-style-position: inside;
+    /* Não foi necesário adicionar a margem à esquerda, pois esse elemento já está abaixo do anterior */
+}

@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcfcfc;
+}
+
+h1 {
+    color: #764e36;
+    border-top: solid;
+    border-bottom: solid;
+    /* Como h1 já tem uma cor, não é necessário definir a mesma cor para as bordas */
+}
+
+h2, h3 {
+    background-color: #764e36;
+    color: #fcfcfc;
+    /* Mudança sútil de cor */
+    padding: 0.18em
+}
+
+img {
+    border: #764e36 solid;
+    padding: 1.25em
+}

@@ -1,0 +1,35 @@
+body {
+    background: #fff6d8 url(cabecalhos_back.png) repeat-y left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 11em;
+    margin-right: 2em;
+    /* As margens aplicadas no corpo inteiro, em vez de cada elemento */
+}
+
+/* h1, h2 { color:#906718;} Para simplificar e não precisar escrever de novo */
+
+h1 {
+    color: #906718;
+}
+
+h2 {
+    color: #906718;
+}
+
+h3 {
+    color: #fff;
+    background-color: #d48b00;
+    padding: 0.25em;
+}
+
+p {
+    text-indent: 1em;
+    /* Para adicionar o espaçamento de início do parágrafo, não foi mostrado na aula antes */
+}
+
+hr {
+    border-style: dashed;
+    border-color: #d48b00;
+    /* Cor de borda, não apenas cor */
+    border-width: medium;
+}

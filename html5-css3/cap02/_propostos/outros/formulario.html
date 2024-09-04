@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 4 - Cadastro</title>
+    </head>
+
+    <body>
+        <h1>Informações Pessoais</h1>
+        <form action="index.html">
+            <fieldset>
+                <legend>Cadastro do Cliente</legend>
+
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="mome" placeholder="Digite o nome do cliente" size="60">
+                </p>
+
+                <p>
+                    <label for="idade">Idade:</label>
+                    <input type="text" name="idade" maxlength="2" placeholder="Digite a idade" size="15">
+                </p>
+
+                <p>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="emdereco" placeholder="Digite o endereço" size="100">
+                </p>
+
+                <p>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" placeholder="Digite a Cidade" size="60">
+                </p>
+
+                <p>
+                    <label for="estado">Estado:</label>
+                    <input type="text" name="estado" maxlength="2" placeholder="UF" size="10">
+                </p>
+
+                <p>
+                    <label for="cep">CEP:</label>
+                    <input type="text" name="cep" maxlength="9" placeholder="XXXXX-XXX" size="20">
+                </p>
+
+                <p>
+                    <label for="telres">Tel/Res:</label>
+                    <input type="tel" name="telres" placeholder="99 99999-9999" size="30">
+                </p>
+
+                <p>
+                    <label for="telcel">Tel/Cel:</label>
+                    <input type="tel" name="telcel" placeholder="99 99999-9999" size="30">
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="mail" name="email" placeholder="Digite o endereço de email" size="95">
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </body>
+</html>

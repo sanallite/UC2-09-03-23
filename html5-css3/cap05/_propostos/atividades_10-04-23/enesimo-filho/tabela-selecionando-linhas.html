@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela zebrada - Selecionando linhas especificas</title>
+    <style>
+        table {border-collapse: collapse;}
+
+        table tr, th, td {padding: 0.5em 2em;
+            text-align: center;
+        }
+
+        table tr:first-child {border: solid thin green;}
+
+        table tr:nth-child(even) {background-color: rgb(159, 197, 108);}
+
+        table tr:nth-child(odd) {background-color: rgb(253, 221, 131);}
+
+        table tr:nth-child(1) {background-color: inherit;}
+        /* Como não tem cor no elemento pai, fica branco e como esse seletor está abaixo dos outros, ele será lido por último, em efeito de cascata */
+
+        h2, h3 {font-style: italic;}
+    </style>
+</head>
+
+<body>
+    <h1>Tabela zebrada</h1>
+
+    <h2>Selecionando linhas pares e impares</h2>
+
+    <h3>Considerando todas as linhas sem contar a primeira</h3>
+
+    <table>
+        <tr>
+            <th>Lorem</th>
+            <th>Ipsum</th>
+            <th>Dolor</th>
+        </tr>
+
+        <tr>
+            <td>L</td>
+            <td>Amet</td>
+            <td>Ratione</td>
+        </tr>
+
+        <tr>
+            <td>O</td>
+            <td>Perferendis</td>
+            <td>Iure</td>
+        </tr>
+
+        <tr>
+            <td>R</td>
+            <td>Accusatium</td>
+            <td>Excepturi</td>
+        </tr>
+
+        <tr>
+            <td>E</td>
+            <td>Et</td>
+            <td>Accusatium</td>
+        </tr>
+
+        <tr>
+            <td>M</td>
+            <td>Sit</td>
+            <td>Et</td>
+        </tr>
+    </table> 
+</body>
+</html>

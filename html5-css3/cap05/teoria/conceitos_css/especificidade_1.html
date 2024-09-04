@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Específicidade</title>
+    <style>
+        li {color:darkblue;}
+
+        .acessorios li {color:lightblue;}
+
+        .novo {color:pink;}
+
+        li.novo {color:orange;}
+
+        #obrigatorio li {color:green;}
+    </style>
+</head>
+
+<body>
+    <p>Carros
+        <ul>
+            <li>carro 1</li>
+            <li>carro 2</li>
+            <li>carro 3</li>
+            <li>carro 4</li>
+        </ul>
+    </p>
+
+    <p>Acessórios
+        <ul class="acessorios">
+            <li class="novo">acessório 1</li>
+            <li>acessório 2</li>
+            <li>acessório 3</li>
+            <li>acessório 4</li>
+        </ul>
+    </p>
+
+    <p>itens obrigatórios
+        <ul id="obrigatorio">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li style="color:red;">item 3 - super obrigatório</li>
+            <li>item 4</li>
+        </ul>
+    </p>
+    <hr>
+
+    <h2>Legenda de cores:</h2>
+
+    <p>Azul escuro
+    <br>- elemento: li</p>
+
+    <p>
+        azul claro
+        <br>- classe + elemento: .acessorios li
+    </p>
+
+    <p>
+        rosa
+        <br>- classe: .novo (não é específico o suficiente para aparecer)
+    </p>
+
+    <p>
+        laranja
+        <br>- elemento + classe: li.novo
+    </p>
+
+    <p>
+        verde
+        <br>- ID + elemento: #obrigatorio li
+    </p>
+
+    <p>
+        vermelho
+        <br> - estilo inline
+    </p>
+</body>
+</html>

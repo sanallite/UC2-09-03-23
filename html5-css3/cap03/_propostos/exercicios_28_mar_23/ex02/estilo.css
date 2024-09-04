@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcfcfc;
+}
+
+h1 {
+    color: #764e36;
+    border-top: #764e36 solid;
+    border-bottom: #764e36 solid;
+}
+
+h2,
+h3 {
+    background-color: #764e36;
+    color: white;
+    padding: 0.18em
+}
+
+img {
+    border: #764e36 solid;
+    padding: 1.25em
+}

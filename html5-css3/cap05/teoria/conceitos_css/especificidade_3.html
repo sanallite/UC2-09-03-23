@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Específicidade 3</title>
+    <style>
+        body {margin: 0 5em 0 5em;
+            text-align: justify;
+        }
+
+        section p:first-child {margin: 0 15em 0 15em;}
+
+        section p:first-child::before {content: url(abre_aspas.gif);}
+
+        section p:first-child::after {content: url(fecha_aspas.gif);}
+
+        #aspaslaranja p:first-child::before {content: url(abre_aspas2.gif);}
+
+        #aspaslaranja p:first-child::after {content: url(fecha_aspas2.gif);}
+    </style>
+</head>
+
+<body>
+    <h1>Específicidade 3</h1>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ab maxime! Fugit architecto pariatur odio voluptates, earum minus, laboriosam optio nobis enim tempora odit, corporis laborum perspiciatis possimus magnam quidem?
+        </p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime fuga doloremque accusamus rerum officiis nulla culpa consequuntur sit labore quos voluptas at, magnam suscipit atque ratione incidunt? Facilis, voluptatum repudiandae?</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione enim vitae rem saepe. In, nisi minima error quasi quae, eius eligendi alias temporibus eveniet a aliquam aspernatur corrupti et molestiae.</p>
+    </section>
+
+    <section id="aspaslaranja">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione enim vitae rem saepe. In, nisi minima error quasi quae, eius eligendi alias temporibus eveniet a aliquam aspernatur corrupti et molestiae.
+        </p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione enim vitae rem saepe. In, nisi minima error quasi quae, eius eligendi alias temporibus eveniet a aliquam aspernatur corrupti et molestiae.</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione enim vitae rem saepe. In, nisi minima error quasi quae, eius eligendi alias temporibus eveniet a aliquam aspernatur corrupti et molestiae.</p>
+    </section>
+
+    <section>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione enim vitae rem saepe. In, nisi minima error quasi quae, eius eligendi alias temporibus eveniet a aliquam aspernatur corrupti et molestiae.
+        </p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione enim vitae rem saepe. In, nisi minima error quasi quae, eius eligendi alias temporibus eveniet a aliquam aspernatur corrupti et molestiae.</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione enim vitae rem saepe. In, nisi minima error quasi quae, eius eligendi alias temporibus eveniet a aliquam aspernatur corrupti et molestiae.</p>
+    </section>
+</body>
+</html>

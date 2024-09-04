@@ -1,0 +1,56 @@
+body {font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+section img {width: 100%;
+}
+
+/* Tamanho grande */
+@media screen and (min-width: 680px) {
+    section {width: 30%;
+        float: left;
+        margin: auto 1.66%;
+    }
+
+    .sogrande {display: block;
+    }
+
+    .somedia, .sopequeno {display:none;
+    }
+
+    section:last-child img {
+        padding-bottom: 20%;
+    }
+}
+
+/* Tamanho médio */
+@media screen and (min-width:420px) and (max-width:679px) {
+    section {width: 45%;
+        float:left;
+        margin: auto 2.5%;
+    }
+
+    section:last-child {width: 95%;
+        margin: auto 2.5%;
+    }
+
+    .somedia {display: block;
+    }
+
+    .sogrande, .sopequeno {display:none;
+    }
+}
+
+/* Tamanho pequeno */
+@media screen and (max-width:419px) {
+    section {width: 95%;
+        margin: auto;
+    }
+
+    .sopequeno {display: block;
+    }
+    
+    .somedia, .sogrande {display:none;
+    }
+}
